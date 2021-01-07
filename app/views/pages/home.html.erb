@@ -1,2 +1,139 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+
+  <div class="banner fcc" >
+    <div id="myId">
+      <h1>Eugénie AVEDIKIAN</h1>
+      <h2>Developpeuse Web</h2>
+      <h2>Full-Stack</h2>
+      <h2> Junior</h2>
+    </div>
+    <div>
+      <%= link_to "#" do %>
+        <i class="far fa-envelope"></i>
+      <% end %>
+      <%= link_to "#" do %>
+        <i class="fab fa-linkedin"></i>
+      <% end %>
+      <%= link_to "#" do %>
+        <i class="fab fa-github"></i>
+      <% end %>
+      <i class="fas fa-phone-alt"></i>
+    </div>
+  </div>
+
+  <div id="about-me" class="sections">
+    <h3>Qui suis-je </h3>
+    <div class="fcsa pb">
+      <%= image_tag "profil", alt: "image de profil", class: "profil" %>
+      <p class="w80">
+        Après plus de 10 ans dans le retail, j'ai souhaité me tourner vers de nouveaux horizons.<br>
+        Et j'ai découvert le code ; plus qu'une nouvelle voie, une nouvelle passion qui m'enthousiaste
+        chaque matin ! <br>
+        Tout m'interesse, autant le coté back-end, que le coté front-end.
+        On ne finit jamais d'apprendre et de progresser !<br>
+        J'ai pour ambition de devenir une dev fullstack de talent.
+        Et pour se faire, je suis à la recherche de nouveaux projets, enseignants, et collègues !
+      </p>
+    </div>
+  </div>
+
+  <div id="langage" class="sections">
+    <h3>Languages et Outils de Developpement</h3>
+    <div style="height: 400px;">
+      <ul id="ul-langage" style="position: relative;">
+        <li id="rb-li" class="fcc" >
+          Ruby
+          <%= image_tag "ruby.jpg", alt: "ruby icon", style: "width: 70px;" %>
+        </li>
+        <li id="sql-li" class="fcc">
+          <%= image_tag "sql.png", alt: "sql icon", style: "width: 70px;" %>
+        </li>
+        <li id="js-li" class="fcc">
+          <%= image_tag "js.png", alt: "js icon", style: "width: 50px;" %>
+          JavaScript
+        </li>
+        <li id="html-li" class="fcc">
+          HTML5
+          <%= image_tag "html.png", alt: "html icon", style: "width: 82px;" %>
+        </li>
+        <li id="css-li" class="fcc">
+          <%= image_tag "css.png", alt: "css icon", style: "width: 85px;" %>
+          CSS3
+        </li>
+        <li id="rails-li" class="fcc">
+          <%= image_tag "rails.png", alt: "rails icon", style: "width: 85px;" %>
+          Ruby On Rails
+        </li>
+        <li id="sqlite-li">
+          <%= image_tag "sqlite.jpg", alt: "sqlit icon", style: "width: 98px;" %>
+        </li>
+        <li id="postgre-li" class="fcc">
+          PostgreSQL
+          <%= image_tag "postgresql", alt: "postgresql icon", style: "width: 80px;" %>
+        </li>
+        <li id="gh-li" class="fcc">
+          <%= image_tag "github.png", alt: "github icon", style: "width: 85px;" %>
+          Git et Github
+        </li>
+        <li id="heroku-li" class="fcc">
+          Heroku
+          <%= image_tag "heroku.png", alt: "heroku icon", style: "width: 85px;" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projet" class="sections">
+    <h3>Réalisation</h3>
+    <p class="pr30">
+      WellBe est une application web sur support desktop de fin de formation que nous avons developpé en équipe, from scratch.<br>
+      Elle a pour objectif de pratiquer du sport sur mesure, entre amis mais tout en étant à distance les uns des autres !
+      En somme, c'est d'actualité !!!<br>
+      Une première ébauche a été présentée devant les promos 440/441 le 04/09/2020.<br>
+      Depuis, nous poursuivons ce projet, non pas à des fins commerciales, mais car il est riche d'enseignements,
+      et nous avons à coeur que notre application d'étudiant remplisse les promesses faites lors de notre pitch !
+    </p>
+    <div class="fcsb">
+      <div class="pl pb">
+        <h4>Points abordés : </h4>
+        <div style="display: flex; flex-direction: column" class="point">
+          <p>Conception de l'application via prototypage</p>
+          <p>Architechture du schema et de la base de donnée</p>
+          <p>Deploiement et mise en production du produit web</p>
+        </div>
+      </div>
+      <div class="fcc flexgrow">
+        <%= link_to "http://www.wellbe-fit.xyz" do %>
+          <%= image_tag "wellbe-police.png", alt: "logo wellbe", width: "150px", class: "lien" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div id="experience" class="sections">
+    <h3>Expériences</h3>
+    <ul>
+      <li>Teaching Assistant à Le Wagon Paris</li>
+      <li>
+        Responsable de magasin chez ZARA
+        <span>Encadrement des équipes de vente</span>
+        <span>Support RH en magasin</span>
+        <span>Gestion commerciale et des stocks de la marchandises</span>
+      </li>
+    </ul>
+  </div>
+
+  <div id="formation" class="sections">
+    <h3>Formation</h3>
+    <ul class="ul-formation">
+      <li id="wagon-li">
+        Le Wagon Paris
+        Batch #440 Juil 2020 | Formation en web-developpement
+      </li>
+      <li>
+        Université Montpellier 2
+        2004 - 2006 | Master Pro Physique Informatique
+      </li>
+    </ul>
+  </div>
+</div>

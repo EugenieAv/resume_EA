@@ -1,13 +1,59 @@
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
-@import "config/bootstrap_variables";
+// @import "config/bootstrap_variables";  le dossier est tout commenté
 
 // External libraries
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  box-sizing: border-box;
+  border: 30px solid $duck-blue;
+}
+
+.w80 {
+  width: 65%;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pl30{
+  padding-bottom: 30px;
+}
+.pr30 {
+  padding-right: 30px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.fcsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fcsa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexgrow {
+  flex-grow: 1;
+}

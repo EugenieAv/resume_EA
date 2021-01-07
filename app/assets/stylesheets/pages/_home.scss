@@ -1,1 +1,147 @@
 // Specific CSS for your home-page
+
+
+h3 {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 0;
+  background: red;
+}
+
+ul {
+  margin: 0;
+  padding-block-end: 10px;
+}
+.lien {
+  text-decoration: none;
+  transition: all 500ms;
+  &:hover {
+    width: 180px;
+  }
+}
+
+.point > p {
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  padding-inline-start: 10px;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 10px 30px;
+  color: $green;
+  border: 2px $white solid;
+  position: relative;
+}
+.container::after {
+  content: "";
+  background: url("profil.jpg"),linear-gradient(rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5));
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+.banner {
+  width: 100%;
+  // height: 60vh;
+  h1{
+    margin-top: 3rem;
+    margin-bottom:1rem;
+    font-style: italic;
+  }
+  h2 {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  }
+}
+
+.profil {
+  background-image: url('profil.jpg');
+  border-radius: 4px;
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.sections {
+  width: 80%;
+  background: $white;
+  color: $dark-grey;
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  margin: 15px auto;
+}
+
+#myId {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+}
+
+#ul-langage li {
+  margin: 0;
+  padding: 10px 0 10px 50px;
+  list-style: none;
+  position: absolute;
+}
+#rb-li {
+  left: 418px;
+  top: 56px;
+}
+#sql-li {
+  right: 185px;
+  top: 30px;
+}
+#js-li {
+  top: 131px;
+  left: 7px;
+}
+#html-li {
+  top: 205px;
+  left: 5px;
+}
+#css-li {
+  top: 145px;
+  left: 138px;
+}
+#rails-li {
+  left: 252px;
+  top: 25px;
+}
+#postgre-li {
+  top: 107px;
+  right: 206px;
+}
+#gh-li {
+  top: 282px;
+  left: 601px;
+}
+#heroku-li {
+  top: 171px;
+  right: 478px;
+}
+#sqlite-li {
+  right: 90px;
+  top: 70px;
+}
+
+.ul-formation li {
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+#wagon-li {
+
+   background-image: url("logo.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
