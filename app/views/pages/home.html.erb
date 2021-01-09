@@ -1,23 +1,32 @@
 <div class="container">
 
-  <div class="banner fcc" >
-    <div id="myId">
+  <div class="banner fcc mb78" >
+    <div class="centrage pb20">
       <h1>Eugénie AVEDIKIAN</h1>
       <h2>Developpeuse Web</h2>
       <h2>Full-Stack</h2>
       <h2> Junior</h2>
     </div>
-    <div>
-      <%= link_to "#" do %>
-        <i class="far fa-envelope"></i>
-      <% end %>
-      <%= link_to "#" do %>
-        <i class="fab fa-linkedin"></i>
-      <% end %>
-      <%= link_to "#" do %>
-        <i class="fab fa-github"></i>
-      <% end %>
-      <i class="fas fa-phone-alt"></i>
+    <div class="join-me pb20 pt20 mb10 fcse">
+      <div class="icon-div">
+        <%= link_to "#" do %>
+          <i class="far fa-envelope icon-style"></i>
+          <span class="make-appear">eugenieavedikian@gmail.com</span>
+        <% end %>
+      </div>
+      <div class="icon-div">
+        <%= link_to "https://www.linkedin.com/in/eugenie-avedikian-a436bb150" do %>
+          <i class="fab fa-linkedin icon-style"></i>
+        <% end %>
+      </div>
+      <div class="icon-div">
+        <%= link_to "https://github.com/EugenieAv" do %>
+          <i class="fab fa-github icon-style"></i>
+        <% end %>
+      </div>
+      <div class="icon-div">
+        <i class="fas fa-phone-alt icon-style"></i>
+      </div>
     </div>
   </div>
 
@@ -25,7 +34,7 @@
     <h3>Qui suis-je </h3>
     <div class="fcsa pb">
       <%= image_tag "profil", alt: "image de profil", class: "profil" %>
-      <p class="w80">
+      <p class="w65percent">
         Après plus de 10 ans dans le retail, j'ai souhaité me tourner vers de nouveaux horizons.<br>
         Et j'ai découvert le code ; plus qu'une nouvelle voie, une nouvelle passion qui m'enthousiaste
         chaque matin ! <br>
@@ -39,11 +48,11 @@
 
   <div id="langage" class="sections">
     <h3>Languages et Outils de Developpement</h3>
-    <div style="height: 400px;">
+    <div style="height: 350px;">
       <ul id="ul-langage" style="position: relative;">
         <li id="rb-li" class="fcc" >
-          Ruby
           <%= image_tag "ruby.jpg", alt: "ruby icon", style: "width: 70px;" %>
+          Ruby
         </li>
         <li id="sql-li" class="fcc">
           <%= image_tag "sql.png", alt: "sql icon", style: "width: 70px;" %>
@@ -113,26 +122,38 @@
   <div id="experience" class="sections">
     <h3>Expériences</h3>
     <ul>
-      <li>Teaching Assistant à Le Wagon Paris</li>
       <li>
-        Responsable de magasin chez ZARA
-        <span>Encadrement des équipes de vente</span>
-        <span>Support RH en magasin</span>
-        <span>Gestion commerciale et des stocks de la marchandises</span>
+        Teaching Assistant à Le Wagon Paris <small>depuis le novembre 2020</small>
+
+
+      </li>
+      <li>
+        Responsable de magasin chez ZARA <small>2007/2020</small>
+        <ul>
+          <li>Encadrement des équipes de vente</li>
+          <li>Support RH en magasin</li>
+          <li>Gestion commerciale et des stocks de la marchandises</li>
+        </ul>
       </li>
     </ul>
   </div>
 
   <div id="formation" class="sections">
     <h3>Formation</h3>
-    <ul class="ul-formation">
+    <ul class="ul-formation fcsa">
       <li id="wagon-li">
-        Le Wagon Paris
-        Batch #440 Juil 2020 | Formation en web-developpement
+        <%= link_to "https://www.lewagon.com/fr" do %>
+          <%= image_tag "logowagon.svg", alt: "logo le wagon" %>
+        <% end %>
+        <p>Formation en web-developpement</p>
+        <p>Paris - Batch #440 - Juillet/Septembre 2020</p>
       </li>
-      <li>
-        Université Montpellier 2
-        2004 - 2006 | Master Pro Physique Informatique
+      <li id="um2-li">
+        <%= image_tag "um2.png", alt: "logo fac", width: "72px" %>
+        <div>
+          <p>Master Pro Physique Informatique</p>
+          <p>Université Montpellier - 2004/2006</p>
+        </div>
       </li>
     </ul>
   </div>

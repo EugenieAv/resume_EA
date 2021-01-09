@@ -16,12 +16,19 @@ body {
   box-sizing: border-box;
   border: 30px solid $duck-blue;
 }
+// *************  WIDTH ************
 
-.w80 {
+.w65percent {
   width: 65%;
 }
+
+// *************  PADDING ************
+
 .pt10 {
   padding-top: 10px;
+}
+.pt20 {
+  padding-top: 20px;
 }
 .pl10 {
   padding-left: 10px;
@@ -38,6 +45,16 @@ body {
 .pb20 {
   padding-bottom: 20px;
 }
+// *************  MARGIN ************
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb78 {
+  margin-bottom: 78px;
+}
+
+// *************  DISPLAY FLEX ************
 
 .fcsb {
   display: flex;
@@ -53,6 +70,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.fcs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.fcse {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .flexgrow {
   flex-grow: 1;
