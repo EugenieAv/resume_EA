@@ -87,8 +87,10 @@ ul {
   height:20px;
   position: absolute;
   top: 350px;
+  right: 250px;
   max-width: 50%;
   max-height: 20px;
+  // border: green 2px solid;
 }
 
 .icon-style {
@@ -103,6 +105,11 @@ ul {
 
 .icon-div {
   width: 35px;
+  position: relative;
+  // border: red 2px solid;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .centrage {
@@ -179,6 +186,40 @@ ul {
   // padding-left: 40px;
 }
 
+.d-none {
+  display:none;
+}
 .make-appear {
-  display: none;
+  position: absolute;
+  &:hover {
+
+  }
+}
+
+#email {
+  top: 35px;
+}
+#tel {
+  top: 3px;
+  right: 10px;
+  font-size: 1.2rem;
+
+  // transition: all ease 350ms;
+
+}
+#div-tel {
+// border: 2px pink solid;
+width: 180px;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1.5s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 1s;
+  // transition: visibility 0s 200ms, opacity 2s linear;
 }

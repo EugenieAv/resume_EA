@@ -50,8 +50,8 @@ body {
 .mb10 {
   margin-bottom: 10px;
 }
-.mb78 {
-  margin-bottom: 78px;
+.mb90 {
+  margin-bottom: 90px;
 }
 
 // *************  DISPLAY FLEX ************
@@ -83,4 +83,13 @@ body {
 }
 .flexgrow {
   flex-grow: 1;
+}
+.fdirectioncolumn {
+  flex-direction: column;
+}
+
+// *************  STYLE DES <a> ************
+
+.text-deco-none {
+  text-decoration: none;
 }

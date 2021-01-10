@@ -1,6 +1,6 @@
 <div class="container">
 
-  <div class="banner fcc mb78" >
+  <div class="banner fcc mb90" >
     <div class="centrage pb20">
       <h1>Eugénie AVEDIKIAN</h1>
       <h2>Developpeuse Web</h2>
@@ -8,12 +8,6 @@
       <h2> Junior</h2>
     </div>
     <div class="join-me pb20 pt20 mb10 fcse">
-      <div class="icon-div">
-        <%= link_to "#" do %>
-          <i class="far fa-envelope icon-style"></i>
-          <span class="make-appear">eugenieavedikian@gmail.com</span>
-        <% end %>
-      </div>
       <div class="icon-div">
         <%= link_to "https://www.linkedin.com/in/eugenie-avedikian-a436bb150" do %>
           <i class="fab fa-linkedin icon-style"></i>
@@ -24,8 +18,15 @@
           <i class="fab fa-github icon-style"></i>
         <% end %>
       </div>
-      <div class="icon-div">
-        <i class="fas fa-phone-alt icon-style"></i>
+      <div class="icon-div fcc fdirectioncolumn" id="div-mail">
+        <%#= link_to "#", class: "fcc fdirectioncolumn text-deco-none" do %>
+          <i class="far fa-envelope icon-style"></i>
+          <span class="make-appear d-none" id="email">eugenieavedikian@gmail.com</span>
+        <%# end %>
+      </div>
+      <div class="icon-div" id="div-tel">
+        <i class="fas fa-phone-alt icon-style "></i>
+        <span class="make-appear d-none" id="tel">06 63 00 17 04</span>
       </div>
     </div>
   </div>
