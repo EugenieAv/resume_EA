@@ -1,6 +1,6 @@
 <div class="container">
 <!-- pb20 pt20 mb10 -->
-  <div class="banner fcc" >
+  <div class="banner fcc" style="border: 1px solid pink;" >
     <div class="centrage pb20">
       <h1>Eugénie AVEDIKIAN</h1>
       <h2>Developpeuse Web</h2>
@@ -29,6 +29,13 @@
       </div>
     </div>
   </div>
+  <div id="menu">
+    <%= link_to "Qui suis-je", "#about-me" %>
+    <%= link_to "Langages et Outils","#langage" %>
+    <%= link_to "Projet","#projet"%>
+    <%= link_to "Expérience professionelle","#experience"%>
+    <%= link_to "Formation","#formation"%>
+  </div>
 
   <div id="about-me" class="sections">
     <h3>Qui suis-je </h3>
@@ -48,7 +55,28 @@
 
   <div id="langage" class="sections">
     <h3>Languages et Outils de Developpement</h3>
-    <div style="height: 350px;">
+    <div class="logos">
+      <div class="item1 fcc">
+        <%= image_tag "ruby.png", alt: "ruby icon", class: "grid-item-img" %>
+        <%= image_tag "rails.png", alt: "rails icon", class: "grid-item-img" %>
+      </div>
+      <div class="item2 fcc">
+        <%= image_tag "html-css-js.png", alt: "html css js icons", class: "grid-item-img" %>
+      </div>
+      <div class="item3 fcc">
+        <%= image_tag "sql.png", alt: "sql icon", class: "grid-item-img" %>
+        <%= image_tag "sqlite.jpg", alt: "sqlit icon", class: "grid-item-img" %>
+        <%= image_tag "postgresql.jpg", alt: "postgresql icon", class: "grid-item-img" %>
+      </div>
+      <div class="item4">
+        <%= image_tag "heroku.png", alt: "heroku icon", class: "grid-item-img" %>
+      </div>
+      <div class="item5 fcc">
+        <%= image_tag "github.png", alt: "github icon", class: "grid-item-img" %>
+        <%= image_tag "git.png", alt: "github icon", class: "grid-item-img" %>
+      </div>
+    </div>
+    <!-- <div style="height: 350px;">
       <ul id="ul-langage" style="position: relative;">
         <li id="rb-li" class="fcc" >
           <%= image_tag "ruby.jpg", alt: "ruby icon", style: "width: 70px;" %>
@@ -89,7 +117,7 @@
           <%= image_tag "heroku.png", alt: "heroku icon", style: "width: 85px;" %>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 
   <div id="projet" class="sections">

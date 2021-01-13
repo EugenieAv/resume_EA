@@ -48,6 +48,7 @@ ul {
 }
 
 
+// ************* div banner *************
 
 .banner {
   width: 100%;
@@ -82,7 +83,7 @@ ul {
   padding-bottom: 20px;
   margin: 15px auto;
 }
-
+// ---------------------------------------
 .join-me {
   width: 50%;
   height:20px;
@@ -119,7 +120,7 @@ ul {
     font-size: 2.8rem;
   }
 }
-
+// ----------------------------------
 #email {
   // top: 35px;
 }
@@ -144,61 +145,62 @@ ul {
   line-height: 1em;
 }
 
+// ************* id= menu *************
 
+#menu
 
-#ul-langage li {
-  margin: 0;
-  padding: 10px 0 10px 50px;
-  list-style: none;
-  position: absolute;
-}
-#rb-li {
-  left: 345px;
-  top: 56px;
-}
-#sql-li {
-  right: 185px;
-  top: 30px;
-}
-#js-li {
-  top: 131px;
-  left: 7px;
-}
-#html-li {
-  top: 205px;
-  left: 5px;
-}
-#css-li {
-  top: 145px;
-  left: 138px;
-}
-#rails-li {
-  left: 288px;
-  top: 14px;
-}
-#postgre-li {
-  top: 107px;
-  right: 206px;
-}
-#gh-li {
-  top: 282px;
-  left: 601px;
-}
-#heroku-li {
-  top: 171px;
-  right: 478px;
-}
-#sqlite-li {
-  right: 90px;
-  top: 70px;
+// ************* id= about-me *************
+
+#about-me p {
+  text-align: justify;
 }
 
-// #toto {
-//   color: red;
-// }
-// #ul-experience {
-//   padding-left: 0;
-// }
+// ************* id= langage 2 *************
+
+.logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.grid-item-img{
+  width: 25%;
+}
+
+.item2 {
+  .grid-item-img {
+    width: 65%;
+  }
+}
+.item3 {
+  .grid-item-img:last-child {
+    width: 30%;
+  }
+}
+.item4 {
+  display: grid;
+  .grid-item-img {
+    width: 35%;
+    justify-self: end;
+  }
+}
+.item5 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / 3;
+  .grid-item-img:first-child {
+    width: 37%;
+  }
+  .grid-item-img:last-child {
+    width: 22%;
+  }
+}
+// ************* id= projet *************
+
+#projet p {
+  text-align: justify;
+}
+
+// ************* id= formation *************
 
 .ul-formation {
   padding-left: 0;
