@@ -1,32 +1,31 @@
 <div class="container">
-
-  <div class="banner fcc mb90" >
+<!-- pb20 pt20 mb10 -->
+  <div class="banner fcc" >
     <div class="centrage pb20">
       <h1>Eugénie AVEDIKIAN</h1>
       <h2>Developpeuse Web</h2>
-      <h2>Full-Stack</h2>
-      <h2> Junior</h2>
-    </div>
-    <div class="join-me pb20 pt20 mb10 fcse">
-      <div class="icon-div">
-        <%= link_to "https://www.linkedin.com/in/eugenie-avedikian-a436bb150" do %>
-          <i class="fab fa-linkedin icon-style"></i>
-        <% end %>
-      </div>
-      <div class="icon-div">
-        <%= link_to "https://github.com/EugenieAv" do %>
-          <i class="fab fa-github icon-style"></i>
-        <% end %>
-      </div>
-      <div class="icon-div fcc fdirectioncolumn" id="div-mail">
-        <%#= link_to "#", class: "fcc fdirectioncolumn text-deco-none" do %>
+      <h2>Full-Stack Junior</h2>
+      <div class="join-me fcse">
+        <div class="icon-div">
+          <%= link_to "https://www.linkedin.com/in/eugenie-avedikian-a436bb150" do %>
+            <i class="fab fa-linkedin icon-style"></i>
+          <% end %>
+        </div>
+        <div class="icon-div">
+          <%= link_to "https://github.com/EugenieAv" do %>
+            <i class="fab fa-github icon-style"></i>
+          <% end %>
+        </div>
+        <div class="icon-div fcc fdirectioncolumn" id="div-mail">
           <i class="far fa-envelope icon-style"></i>
-          <span class="make-appear d-none" id="email">eugenieavedikian@gmail.com</span>
-        <%# end %>
+        </div>
+        <div class="icon-div fcsb"id="div-tel">
+          <i class="fas fa-phone-alt icon-style "></i>
+        </div>
       </div>
-      <div class="icon-div" id="div-tel">
-        <i class="fas fa-phone-alt icon-style "></i>
-        <span class="make-appear d-none" id="tel">06 63 00 17 04</span>
+      <div class="contact centrage">
+        <span class="ml16 pt20 pb20 d-none" id="email">eugenieavedikian@gmail.com</span>
+        <span class="ml12 d-none" id="tel">06 63 00 17 04</span>
       </div>
     </div>
   </div>
@@ -94,9 +93,9 @@
   </div>
 
   <div id="projet" class="sections">
-    <h3>Réalisation</h3>
+    <h3>Projet Réalisé</h3>
     <p class="pr30">
-      WellBe est une application web sur support desktop de fin de formation que nous avons developpé en équipe, from scratch.<br>
+       <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "text-deco-none" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "text-deco-none" %> en équipe, from scratch.<br>
       Elle a pour objectif de pratiquer du sport sur mesure, entre amis mais tout en étant à distance les uns des autres !
       En somme, c'est d'actualité !!!<br>
       Une première ébauche a été présentée devant les promos 440/441 le 04/09/2020.<br>
@@ -121,15 +120,17 @@
   </div>
 
   <div id="experience" class="sections">
-    <h3>Expériences</h3>
-    <ul>
+    <h3>Expériences Professionelles</h3>
+    <ul class="ul-formation" id="ul-experience">
       <li>
-        Teaching Assistant à Le Wagon Paris <small>depuis le novembre 2020</small>
-
-
+        Teaching Assistant à Le Wagon Paris <small> (depuis novembre 2020) </small>
+        <ul>
+          <li>Javascript</li>
+          <li>Rails</li>
+        </ul>
       </li>
       <li>
-        Responsable de magasin chez ZARA <small>2007/2020</small>
+        Responsable de magasin chez ZARA <small> (2007/2020) </small>
         <ul>
           <li>Encadrement des équipes de vente</li>
           <li>Support RH en magasin</li>
@@ -140,7 +141,7 @@
   </div>
 
   <div id="formation" class="sections">
-    <h3>Formation</h3>
+    <h3 id="toto">Formation</h3>
     <ul class="ul-formation fcsa">
       <li id="wagon-li">
         <%= link_to "https://www.lewagon.com/fr" do %>
