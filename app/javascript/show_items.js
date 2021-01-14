@@ -14,25 +14,6 @@ const makeMagicMail = () => {
     delay: (el, i) => 30 * i
   });
 }
-// const makeMagicphone = () => {
-//   anime.timeline()
-//     .add({
-//     targets: '.ml16 .letters',
-//     translateY: [-100,0],
-//     easing: "easeOutExpo",
-//     duration: 5400,
-//     delay: (el, i) => 30 * i
-//   })
-//   // .add({
-//   //   targets: '.ml16',
-//   //   opacity: 0,
-//   //   duration: 1000,
-//   //   easing: "easeOutExpo",
-//   //   delay: 1000
-//   // })
-//   ;
-// }
-
 
 const showItems = () => {
   const divMail = document.querySelector('#div-mail');

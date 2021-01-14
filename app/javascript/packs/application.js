@@ -29,10 +29,14 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { showItems } from '../show_items';
 import { makeMagic } from '../show_items';
+import { reavealDiv } from '../reveal_div';
+import { linkToDiv } from '../link_to_div';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   showItems();
   // makeMagic();
+  reavealDiv();
+  linkToDiv();
 });
