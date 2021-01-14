@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, a {
   font-family: "Ubuntu", "Helvetica", "sans-serif";
 }
 
+body {
+  // font-size: 16px;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -32,5 +36,5 @@ h4 {
 p, li, span {
   // font-family: "Roboto", "Helvetica", "sans-serif";
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.05rem;
+  // font-size: 1.15rem;
 }

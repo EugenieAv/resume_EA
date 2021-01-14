@@ -11,6 +11,7 @@ ul {
   margin: 0;
   padding-block-end: 10px;
 }
+
 .lien {
   text-decoration: none;
   transition: all 500ms;
@@ -47,6 +48,7 @@ ul {
 }
 
 
+// ************* div banner *************
 
 .banner {
   width: 100%;
@@ -81,93 +83,134 @@ ul {
   padding-bottom: 20px;
   margin: 15px auto;
 }
-
+// ---------------------------------------
 .join-me {
   width: 50%;
   height:20px;
-  position: absolute;
-  top: 350px;
-  right: 250px;
   max-width: 50%;
   max-height: 20px;
   // border: green 2px solid;
+  margin-top: 2rem;
 }
-
-.icon-style {
-  font-size: 30px;
-  color: rgba(40, 75, 99, 0.6);
-  transition: all ease 350ms;
-  &:hover {
-    color: rgba(40, 75, 99, 1);
-    font-size: 35px;
-  }
+.centrage {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+}
+.contact {
+  margin-top: -17px;
+  // background-color: lightblue;
 }
 
 .icon-div {
-  width: 35px;
+  width: 2.8rem;
   position: relative;
   // border: red 2px solid;
   &:hover{
     cursor: pointer;
   }
 }
-
-.centrage {
- display: flex;
- flex-direction: column;
- text-align: center;
+.icon-style {
+  font-size: 2rem;
+  color: rgba(40, 75, 99, 0.6);
+  transition: all ease 350ms;
+  &:hover {
+    color: rgba(40, 75, 99, 1);
+    font-size: 2.8rem;
+  }
+}
+// ----------------------------------
+#email {
+  // top: 35px;
+}
+#tel {
+  // top: 3px;
+  // right: 10px;
+  // font-size: 1.2rem;
 }
 
-#ul-langage li {
-  margin: 0;
-  padding: 10px 0 10px 50px;
-  list-style: none;
-  position: absolute;
-}
-#rb-li {
-  left: 345px;
-  top: 56px;
-}
-#sql-li {
-  right: 185px;
-  top: 30px;
-}
-#js-li {
-  top: 131px;
-  left: 7px;
-}
-#html-li {
-  top: 205px;
-  left: 5px;
-}
-#css-li {
-  top: 145px;
-  left: 138px;
-}
-#rails-li {
-  left: 288px;
-  top: 14px;
-}
-#postgre-li {
-  top: 107px;
-  right: 206px;
-}
-#gh-li {
-  top: 282px;
-  left: 601px;
-}
-#heroku-li {
-  top: 171px;
-  right: 478px;
-}
-#sqlite-li {
-  right: 90px;
-  top: 70px;
+.ml16 {
+  // color: #402d2d;
+  // padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  // text-transform: uppercase;
+  // letter-spacing: 0.5em;
+  overflow: hidden;
 }
 
-.ul-formation li {
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+// ************* id= menu *************
+
+#menu
+
+// ************* id= about-me *************
+
+#about-me p {
+  text-align: justify;
+}
+
+// ************* id= langage 2 *************
+
+.logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.grid-item-img{
+  width: 25%;
+}
+
+.item2 {
+  .grid-item-img {
+    width: 65%;
+  }
+}
+.item3 {
+  .grid-item-img:last-child {
+    width: 30%;
+  }
+}
+.item4 {
+  display: grid;
+  .grid-item-img {
+    width: 35%;
+    justify-self: end;
+  }
+}
+.item5 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / 3;
+  .grid-item-img:first-child {
+    width: 37%;
+  }
+  .grid-item-img:last-child {
+    width: 22%;
+  }
+}
+// ************* id= projet *************
+
+#projet p {
+  text-align: justify;
+}
+
+// ************* id= formation *************
+
+.ul-formation {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+ li {
   font-size: 1.1rem;
   list-style: none;
+  padding-right: 20px;
+  }
 }
 
 #wagon-li p{
@@ -184,42 +227,4 @@ ul {
   // background-size: 30px;
   // background-repeat: no-repeat;
   // padding-left: 40px;
-}
-
-.d-none {
-  display:none;
-}
-.make-appear {
-  position: absolute;
-  &:hover {
-
-  }
-}
-
-#email {
-  top: 35px;
-}
-#tel {
-  top: 3px;
-  right: 10px;
-  font-size: 1.2rem;
-
-  // transition: all ease 350ms;
-
-}
-#div-tel {
-// border: 2px pink solid;
-width: 180px;
-}
-
-.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: all 1.5s linear;
-}
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: all linear 1s;
-  // transition: visibility 0s 200ms, opacity 2s linear;
 }

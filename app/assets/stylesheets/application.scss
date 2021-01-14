@@ -92,4 +92,13 @@ body {
 
 .text-deco-none {
   text-decoration: none;
+  color: $dark-grey;
+  font-size: 1.15rem;
+}
+
+
+// *************  DISPLAY ************
+.d-none {
+  // display:none;
+  visibility: hidden;
 }
