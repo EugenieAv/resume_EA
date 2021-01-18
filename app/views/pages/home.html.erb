@@ -1,7 +1,7 @@
 <div class="container">
 <!-- pb20 pt20 mb10 -->
   <div class="banner" >
-    <div class="centrage pb20">
+    <div class="me-myself-and-i pb20">
       <h1>Eugénie AVEDIKIAN</h1>
       <h2>Developpeuse Web</h2>
       <h2>Full-Stack Junior</h2>
@@ -23,33 +23,35 @@
           <i class="fas fa-phone-alt icon-style "></i>
         </div>
       </div>
-      <div class="contact centrage">
+      <div class="fcc contact">
         <span class="ml16 pt20 d-none" id="email">eugenieavedikian@gmail.com</span>
         <span class="ml12 d-none" id="tel">06 63 00 17 04</span>
       </div>
     </div>
-    <div id="menu">
-      <div class="btn-go-to fcc">
-        <!-- Qui suis-je -->
-        <%= link_to "Qui suis-je", "#about-me", class: "text-deco-none", id: "btnOne" %>
-      </div>
-      <div class="btn-go-to fcc">
-        <%= link_to "Langages et Outils","#langage", class: "text-deco-none", id: "btnTwo" %>
-      </div>
-      <div class="btn-go-to fcc">
-        <%= link_to "Projet","#projet", class: "text-deco-none", id: "btnThree" %>
-      </div>
-      <div class="btn-go-to fcc">
-        <%= link_to "Expérience professionelle","#experience", class: "text-deco-none", id: "btnFour" %>
-      </div>
-      <div class="btn-go-to fcc">
-        <%= link_to "Formation","#formation", class: "text-deco-none", id: "btnFive" %>
-      </div>
+  </div>
+  <div class="menu">
+    <div class="btn-go-to fcc">
+      <%= link_to "Qui suis-je", "#about-me", class: "style-link", id: "btnOne" %>
+    </div>
+    <div class="btn-go-to fcc">
+      <%= link_to "Langages et Outils","#langage", class: "style-link", id: "btnTwo" %>
+    </div>
+    <div class="btn-go-to fcc">
+      <%= link_to "Projet","#projet", class: "style-link", id: "btnThree" %>
+    </div>
+    <div class="btn-go-to fcc">
+      <%= link_to "Expérience professionelle","#experience", class: "style-link", id: "btnFour" %>
+    </div>
+    <div class="btn-go-to fcc">
+      <%= link_to "Formation","#formation", class: "style-link", id: "btnFive" %>
     </div>
   </div>
-
   <div id="about-me" class="sections">
-    <h3>Qui suis-je </h3>
+    <h3>
+      Qui suis-je
+      <i class="fas fa-expand-alt"></i>
+      <!-- <i class="fas fa-compress-alt"></i> -->
+    </h3>
     <div class="hide">
       <div class="fcsa pb">
         <%= image_tag "profil.jpg", alt: "image de profil", class: "profil" %>
@@ -63,11 +65,15 @@
           Et pour se faire, je suis à la recherche de nouveaux projets, enseignants, et collègues !
         </p>
       </div>
+
     </div>
   </div>
 
   <div id="langage" class="sections">
-    <h3>Languages et Outils de Developpement</h3>
+    <h3>
+      Languages et Outils de Developpement
+      <i class="fas fa-expand-alt"></i>
+    </h3>
     <div class="hide">
       <div class="logos">
         <div class="item1 fcc">
@@ -94,12 +100,15 @@
   </div>
 
   <div id="projet" class="sections">
-    <h3>Projet Réalisé</h3>
+    <h3>
+      Projet Réalisé
+      <i class="fas fa-expand-alt"></i>
+    </h3>
     <div class="hide">
       <p class="pr30">
-         <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "text-deco-none" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "text-deco-none" %> en équipe, from scratch.<br>
+         <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "style-link" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "style-link" %> en équipe, from scratch.<br>
         Elle a pour objectif de pratiquer du sport sur mesure, entre amis mais tout en étant à distance les uns des autres !
-        En somme, c'est d'actualité !!!<br>
+        En somme, c'est d'actualité !<br>
         Une première ébauche a été présentée devant les promos 440/441 le 04/09/2020.<br>
         Depuis, nous poursuivons ce projet, non pas à des fins commerciales, mais car il est riche d'enseignements,
         et nous avons à coeur que notre application d'étudiant remplisse les promesses faites lors de notre pitch !
@@ -123,7 +132,10 @@
   </div>
 
   <div id="experience" class="sections">
-    <h3>Expériences Professionelles</h3>
+    <h3>
+      Expériences Professionelles
+      <i class="fas fa-expand-alt"></i>
+    </h3>
     <div class="hide">
       <ul class="ul-formation" id="ul-experience">
         <li>
@@ -146,7 +158,10 @@
   </div>
 
   <div id="formation" class="sections">
-    <h3 id="toto">Formation</h3>
+    <h3 id="toto">
+      Formation
+      <i class="fas fa-expand-alt"></i>
+    </h3>
     <div class="hide">
       <ul class="ul-formation fcsa">
         <li id="wagon-li">

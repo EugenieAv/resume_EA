@@ -1,0 +1,118 @@
+@media (min-width: 1150px) and (max-width: 1440px) {
+  body {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 4rem;
+    // color: green;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .sections {
+    padding: 0.5rem 2.5rem;
+    margin: 2rem auto;
+  }
+  .menu {
+    margin: 1rem auto;
+    padding: 1rem 2.5rem;
+  }
+  .join-me {
+    margin-top: 4rem;
+  }
+  .icon-style {
+    font-size: 4.5rem;
+    &:hover {
+      font-size: 4.8rem;
+    }
+  }
+  .contact {
+    margin-bottom: 4rem;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+@media (min-width: 500px) and (max-width: 1149px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+  .sections {
+    padding: 0.2rem 1rem;
+    margin: 1rem auto;
+  }
+  .menu {
+    margin: 0 auto;
+    padding: 0.7rem 1rem;
+  }
+  .join-me {
+    margin-top: 1.5rem;
+  }
+  .icon-style {
+    font-size: 3.5rem;
+    &:hover {
+      font-size: 3.8rem;
+    }
+  }
+  .btn-go-to {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+}
+
+@media screen and (max-width: 745px) {
+.menu {
+  display: none;
+}
+}
+
+// @media screen and (max-width: 576px) {
+//   body {
+//     font-size: 12px;
+//   }
+//   h1 {
+//     font-size: 1.9rem;
+//     color:red;
+//   }
+//   h2 {
+//     font-size: 1.75rem;
+//   }
+//   h3 {
+//     font-size: 1.5rem;
+//   }
+//   h4 {
+//     font-size: 1.25rem;
+//   }
+//   .icon-style {
+//     font-size: 1.75rem;
+//     &:hover {
+//       font-size: 2rem;
+//     }
+//   }
+//   .menu {
+//     div {
+//       color: red;
+//     }
+//   }
+// }
+
