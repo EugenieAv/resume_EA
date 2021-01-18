@@ -78,41 +78,46 @@
     width: 80%;
     margin: 0.5rem auto;
   }
+  .menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .menu-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .menu-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .menu-3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .menu-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .menu-5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 @media screen and (max-width: 745px) {
-.menu {
-  display: none;
+  .menu {
+    display: none;
+  }
 }
-}
-
-// @media screen and (max-width: 576px) {
-//   body {
-//     font-size: 12px;
-//   }
-//   h1 {
-//     font-size: 1.9rem;
-//     color:red;
-//   }
-//   h2 {
-//     font-size: 1.75rem;
-//   }
-//   h3 {
-//     font-size: 1.5rem;
-//   }
-//   h4 {
-//     font-size: 1.25rem;
-//   }
-//   .icon-style {
-//     font-size: 1.75rem;
-//     &:hover {
-//       font-size: 2rem;
-//     }
-//   }
-//   .menu {
-//     div {
-//       color: red;
-//     }
-//   }
-// }
 

@@ -30,155 +30,157 @@
     </div>
   </div>
   <div class="menu">
-    <div class="btn-go-to fcc">
+    <div class="btn-go-to fcc menu-1">
       <%= link_to "Qui suis-je", "#about-me", class: "style-link", id: "btnOne" %>
     </div>
-    <div class="btn-go-to fcc">
+    <div class="btn-go-to fcc menu-2">
       <%= link_to "Langages et Outils","#langage", class: "style-link", id: "btnTwo" %>
     </div>
-    <div class="btn-go-to fcc">
+    <div class="btn-go-to fcc menu-3">
       <%= link_to "Projet","#projet", class: "style-link", id: "btnThree" %>
     </div>
-    <div class="btn-go-to fcc">
+    <div class="btn-go-to fcc menu-4">
       <%= link_to "Expérience professionelle","#experience", class: "style-link", id: "btnFour" %>
     </div>
-    <div class="btn-go-to fcc">
+    <div class="btn-go-to fcc menu-5">
       <%= link_to "Formation","#formation", class: "style-link", id: "btnFive" %>
     </div>
   </div>
-  <div id="about-me" class="sections">
-    <h3>
-      Qui suis-je
-      <i class="fas fa-expand-alt"></i>
-      <!-- <i class="fas fa-compress-alt"></i> -->
-    </h3>
-    <div class="hide">
-      <div class="fcsa pb">
-        <%= image_tag "profil.jpg", alt: "image de profil", class: "profil" %>
-        <p class="w65percent">
-          Après plus de 10 ans dans le retail, j'ai souhaité me tourner vers de nouveaux horizons.<br>
-          Et j'ai découvert le code ; plus qu'une nouvelle voie, une nouvelle passion qui m'enthousiaste
-          chaque matin ! <br>
-          Tout m'interesse, autant le coté back-end, que le coté front-end.
-          On ne finit jamais d'apprendre et de progresser !<br>
-          J'ai pour ambition de devenir une dev fullstack de talent.
-          Et pour se faire, je suis à la recherche de nouveaux projets, enseignants, et collègues !
+  <div class="sections-wrapper">
+    <div id="about-me" class="sections">
+      <h3>
+        Qui suis-je
+        <i class="fas fa-expand-alt"></i>
+        <!-- <i class="fas fa-compress-alt"></i> -->
+      </h3>
+      <div class="hide">
+        <div class="fcsa pb">
+          <%= image_tag "profil.jpg", alt: "image de profil", class: "profil" %>
+          <p class="w65percent">
+            Après plus de 10 ans dans le retail, j'ai souhaité me tourner vers de nouveaux horizons.<br>
+            Et j'ai découvert le code ; plus qu'une nouvelle voie, une nouvelle passion qui m'enthousiaste
+            chaque matin ! <br>
+            Tout m'interesse, autant le coté back-end, que le coté front-end.
+            On ne finit jamais d'apprendre et de progresser !<br>
+            J'ai pour ambition de devenir une dev fullstack de talent.
+            Et pour se faire, je suis à la recherche de nouveaux projets, enseignants, et collègues !
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="langage" class="sections">
+      <h3>
+        Languages et Outils de Developpement
+        <i class="fas fa-expand-alt"></i>
+      </h3>
+      <div class="hide">
+        <div class="logos">
+          <div class="item1 fcc">
+            <%= image_tag "ruby.png", alt: "ruby icon", class: "grid-item-img" %>
+            <%= image_tag "rails.png", alt: "rails icon", class: "grid-item-img" %>
+          </div>
+          <div class="item2 fcc">
+            <%= image_tag "html-css-js.png", alt: "html css js icons", class: "grid-item-img" %>
+          </div>
+          <div class="item3 fcc">
+            <%= image_tag "sql.png", alt: "sql icon", class: "grid-item-img" %>
+            <%= image_tag "sqlite.jpg", alt: "sqlit icon", class: "grid-item-img" %>
+            <%= image_tag "postgresql.jpg", alt: "postgresql icon", class: "grid-item-img" %>
+          </div>
+          <div class="item4">
+            <%= image_tag "heroku.png", alt: "heroku icon", class: "grid-item-img" %>
+          </div>
+          <div class="item5 fcc">
+            <%= image_tag "github.png", alt: "github icon", class: "grid-item-img" %>
+            <%= image_tag "git.png", alt: "github icon", class: "grid-item-img" %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projet" class="sections">
+      <h3>
+        Projet Réalisé
+        <i class="fas fa-expand-alt"></i>
+      </h3>
+      <div class="hide">
+        <p class="pr30">
+           <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "style-link" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "style-link" %> en équipe, from scratch.<br>
+          Elle a pour objectif de pratiquer du sport sur mesure, entre amis mais tout en étant à distance les uns des autres !
+          En somme, c'est d'actualité !<br>
+          Une première ébauche a été présentée devant les promos 440/441 le 04/09/2020.<br>
+          Depuis, nous poursuivons ce projet, non pas à des fins commerciales, mais car il est riche d'enseignements,
+          et nous avons à coeur que notre application d'étudiant remplisse les promesses faites lors de notre pitch !
         </p>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="langage" class="sections">
-    <h3>
-      Languages et Outils de Developpement
-      <i class="fas fa-expand-alt"></i>
-    </h3>
-    <div class="hide">
-      <div class="logos">
-        <div class="item1 fcc">
-          <%= image_tag "ruby.png", alt: "ruby icon", class: "grid-item-img" %>
-          <%= image_tag "rails.png", alt: "rails icon", class: "grid-item-img" %>
-        </div>
-        <div class="item2 fcc">
-          <%= image_tag "html-css-js.png", alt: "html css js icons", class: "grid-item-img" %>
-        </div>
-        <div class="item3 fcc">
-          <%= image_tag "sql.png", alt: "sql icon", class: "grid-item-img" %>
-          <%= image_tag "sqlite.jpg", alt: "sqlit icon", class: "grid-item-img" %>
-          <%= image_tag "postgresql.jpg", alt: "postgresql icon", class: "grid-item-img" %>
-        </div>
-        <div class="item4">
-          <%= image_tag "heroku.png", alt: "heroku icon", class: "grid-item-img" %>
-        </div>
-        <div class="item5 fcc">
-          <%= image_tag "github.png", alt: "github icon", class: "grid-item-img" %>
-          <%= image_tag "git.png", alt: "github icon", class: "grid-item-img" %>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="projet" class="sections">
-    <h3>
-      Projet Réalisé
-      <i class="fas fa-expand-alt"></i>
-    </h3>
-    <div class="hide">
-      <p class="pr30">
-         <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "style-link" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "style-link" %> en équipe, from scratch.<br>
-        Elle a pour objectif de pratiquer du sport sur mesure, entre amis mais tout en étant à distance les uns des autres !
-        En somme, c'est d'actualité !<br>
-        Une première ébauche a été présentée devant les promos 440/441 le 04/09/2020.<br>
-        Depuis, nous poursuivons ce projet, non pas à des fins commerciales, mais car il est riche d'enseignements,
-        et nous avons à coeur que notre application d'étudiant remplisse les promesses faites lors de notre pitch !
-      </p>
-      <div class="fcsb">
-        <div class="pl pb">
-          <h4>Points abordés : </h4>
-          <div style="display: flex; flex-direction: column" class="point">
-            <p>Conception de l'application via prototypage</p>
-            <p>Architechture du schema et de la base de donnée</p>
-            <p>Deploiement et mise en production du produit web</p>
+        <div class="fcsb">
+          <div class="pl pb">
+            <h4>Points abordés : </h4>
+            <div style="display: flex; flex-direction: column" class="point">
+              <p>Conception de l'application via prototypage</p>
+              <p>Architechture du schema et de la base de donnée</p>
+              <p>Deploiement et mise en production du produit web</p>
+            </div>
+          </div>
+          <div class="fcc flexgrow">
+            <%= link_to "http://www.wellbe-fit.xyz" do %>
+              <%= image_tag "wellbe-police.png", alt: "logo wellbe", width: "150px", class: "lien" %>
+            <% end %>
           </div>
         </div>
-        <div class="fcc flexgrow">
-          <%= link_to "http://www.wellbe-fit.xyz" do %>
-            <%= image_tag "wellbe-police.png", alt: "logo wellbe", width: "150px", class: "lien" %>
-          <% end %>
-        </div>
       </div>
     </div>
-  </div>
 
-  <div id="experience" class="sections">
-    <h3>
-      Expériences Professionelles
-      <i class="fas fa-expand-alt"></i>
-    </h3>
-    <div class="hide">
-      <ul class="ul-formation" id="ul-experience">
-        <li>
-          Teaching Assistant à Le Wagon Paris <small> (depuis novembre 2020) </small>
-          <ul>
-            <li>Javascript</li>
-            <li>Rails</li>
-          </ul>
-        </li>
-        <li>
-          Responsable de magasin chez ZARA <small> (2007/2020) </small>
-          <ul>
-            <li>Encadrement des équipes de vente</li>
-            <li>Support RH en magasin</li>
-            <li>Gestion commerciale et des stocks de la marchandises</li>
-          </ul>
-        </li>
-      </ul>
+    <div id="experience" class="sections">
+      <h3>
+        Expériences Professionelles
+        <i class="fas fa-expand-alt"></i>
+      </h3>
+      <div class="hide">
+        <ul class="ul-formation" id="ul-experience">
+          <li>
+            Teaching Assistant à Le Wagon Paris <small> (depuis novembre 2020) </small>
+            <ul>
+              <li>Javascript</li>
+              <li>Rails</li>
+            </ul>
+          </li>
+          <li>
+            Responsable de magasin chez ZARA <small> (2007/2020) </small>
+            <ul>
+              <li>Encadrement des équipes de vente</li>
+              <li>Support RH en magasin</li>
+              <li>Gestion commerciale et des stocks de la marchandises</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div id="formation" class="sections">
-    <h3 id="toto">
-      Formation
-      <i class="fas fa-expand-alt"></i>
-    </h3>
-    <div class="hide">
-      <ul class="ul-formation fcsa">
-        <li id="wagon-li">
-          <%= link_to "https://www.lewagon.com/fr" do %>
-            <%= image_tag "logowagon.svg", alt: "logo le wagon" %>
-          <% end %>
-          <p>Formation en web-developpement</p>
-          <p>Paris - Batch #440 - Juillet/Septembre 2020</p>
-        </li>
-        <li id="um2-li">
-          <%= image_tag "um2.png", alt: "logo fac", width: "72px" %>
-          <div>
-            <p>Master Pro Physique Informatique</p>
-            <p>Université Montpellier - 2004/2006</p>
-          </div>
-        </li>
-      </ul>
+    <div id="formation" class="sections">
+      <h3 id="toto">
+        Formation
+        <i class="fas fa-expand-alt"></i>
+      </h3>
+      <div class="hide">
+        <ul class="ul-formation fcsa">
+          <li id="wagon-li">
+            <%= link_to "https://www.lewagon.com/fr" do %>
+              <%= image_tag "logowagon.svg", alt: "logo le wagon" %>
+            <% end %>
+            <p>Formation en web-developpement</p>
+            <p>Paris - Batch #440 - Juillet/Septembre 2020</p>
+          </li>
+          <li id="um2-li">
+            <%= image_tag "um2.png", alt: "logo fac", width: "72px" %>
+            <div>
+              <p>Master Pro Physique Informatique</p>
+              <p>Université Montpellier - 2004/2006</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
