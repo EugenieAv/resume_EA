@@ -19,8 +19,8 @@ body {
 }
 // *************  WIDTH ************
 
-.w65percent {
-  width: 65%;
+.w50percent {
+  width: 50%;
 }
 
 // *************  PADDING ************
@@ -56,6 +56,9 @@ body {
 }
 .mb30 {
   margin-bottom: 30px;
+}
+.mb2rem {
+  padding-bottom: 4rem;
 }
 
 // *************  DISPLAY FLEX ************
