@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class="menu">
+  <div class="menu menu2">
     <div class="btn-go-to fcc menu-1">
       <%= link_to "Qui suis-je", "#about-me", class: "style-link", id: "btnOne" %>
     </div>
@@ -56,7 +56,7 @@
       <div class="hide marker">
         <div class="pb aboutme-s-device">
           <%= image_tag "profil.jpg", alt: "image de profil", class: "profil" %>
-          <p class="">
+          <p class="bio">
             Après plus de 10 ans dans le retail, j'ai souhaité me tourner vers de nouveaux horizons.<br>
             Et j'ai découvert le code ; plus qu'une nouvelle voie, une nouvelle passion qui m'enthousiaste
             chaque matin ! <br>
@@ -89,7 +89,7 @@
             <%= image_tag "sqlite.jpg", alt: "sqlit icon", class: "grid-item-img" %>
             <%= image_tag "postgresql.jpg", alt: "postgresql icon", class: "grid-item-img" %>
           </div>
-          <div class="item4">
+          <div class="item4 fcc">
             <%= image_tag "heroku.png", alt: "heroku icon", class: "grid-item-img" %>
           </div>
           <div class="item5 fcc">
@@ -106,29 +106,27 @@
         <i class="fas fa-expand-alt"></i>
       </h3>
       <div class="hide marker">
-        <div class="fcc">
-          <p class="pr30 w50percent">
-             <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "style-link" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "style-link" %> en équipe, from scratch.<br>
+        <div class="projet-wrapper">
+          <div class="projet-container1">
+            <p>
+            <%= link_to "WellBe", "http://www.wellbe-fit.xyz", class: "style-link" %> est une application web sur support desktop developpée au <%= link_to "Wagon", "https://www.lewagon.com/fr",class: "style-link" %> en équipe, from scratch.<br>
             Elle a pour objectif de pratiquer du sport sur mesure, entre amis mais tout en étant à distance les uns des autres !
             En somme, c'est d'actualité !<br>
             Une première ébauche a été présentée devant les promos 440/441 le 04/09/2020.<br>
             Depuis, nous poursuivons ce projet, non pas à des fins commerciales, mais car il est riche d'enseignements,
             et nous avons à coeur que notre application d'étudiant remplisse les promesses faites lors de notre pitch !
           </p>
-          <div style="width: 45%;">
-            <div class="pl pb">
-              <h4>Points abordés : </h4>
-              <div style="display: flex; flex-direction: column" class="point">
-                <p>Conception de l'application via prototypage</p>
-                <p>Architechture du schema et de la base de donnée</p>
-                <p>Deploiement et mise en production du produit web</p>
-              </div>
-            </div>
-            <div class="" style="text-align: center;">
-              <%= link_to "http://www.wellbe-fit.xyz" do %>
-                <%= image_tag "wellbe-police.png", alt: "logo wellbe", width: "30%", class: "lien" %>
-              <% end %>
-            </div>
+          </div>
+          <div class="projet-container2">
+            <h4>Points abordés : </h4>
+              <p>Conception de l'application via prototypage</p>
+              <p>Architechture du schema et de la base de donnée</p>
+              <p>Deploiement et mise en production du produit web</p>
+          </div>
+          <div class="projet-container3">
+            <%= link_to "http://www.wellbe-fit.xyz" do %>
+              <%= image_tag "wellbe-police.png", alt: "logo wellbe", class: "lien" %>
+            <% end %>
           </div>
         </div>
       </div>
@@ -140,16 +138,18 @@
         <i class="fas fa-expand-alt"></i>
       </h3>
       <div class="hide marker">
-        <ul class="ul-formation" id="ul-experience">
+        <ul class="liste-style" id="ul-experience">
           <li>
-            Teaching Assistant à Le Wagon Paris <small> (depuis novembre 2020) </small>
+            Teaching Assistant à Le Wagon Paris
+            <br><small> (depuis novembre 2020) </small>
             <ul>
               <li>Javascript</li>
               <li>Rails</li>
             </ul>
           </li>
           <li>
-            Responsable de magasin chez ZARA <small> (2007/2020) </small>
+            Responsable de magasin chez ZARA
+            <br><small> (2007/2020) </small>
             <ul>
               <li>Encadrement des équipes de vente</li>
               <li>Support RH en magasin</li>
@@ -166,7 +166,7 @@
         <i class="fas fa-expand-alt"></i>
       </h3>
       <div class="hide marker">
-        <ul class="ul-formation fcsa">
+        <ul class="liste-style ul-formation">
           <li id="wagon-li">
             <%= link_to "https://www.lewagon.com/fr" do %>
               <%= image_tag "logowagon.svg", alt: "logo le wagon" %>
@@ -175,7 +175,7 @@
             <p>Paris - Batch #440 - Juillet/Septembre 2020</p>
           </li>
           <li id="um2-li">
-            <%= image_tag "um2.png", alt: "logo fac", width: "72px" %>
+            <%= image_tag "um2.png", alt: "logo fac" %>
             <div>
               <p>Master Pro Physique Informatique</p>
               <p>Université Montpellier - 2004/2006</p>
