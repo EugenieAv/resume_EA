@@ -1,0 +1,134 @@
+// ***************** PETIT ****************
+
+@media screen and (max-width: 867px) {
+  p, li, span {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1.05rem;
+  }
+  .menu {
+    display: none;
+  }
+  .icon-style {
+    font-size: 1.5rem;
+    &:hover {
+      font-size: 1.7rem;
+    }
+  }
+  .join-me {
+    margin-top: 2rem;
+  }
+  #email {
+    padding-top: 0;
+  }
+  .sections-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sections {
+    margin: 1rem;
+  }
+  .aboutme-s-device{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bio {
+    margin: 1rem;
+  }
+
+  .logos {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .item1 {
+    grid-row: 1 / 2;
+    .grid-item-img {
+      width: 15%;
+    }
+  }
+  .item2 {
+    grid-row: 2 / 3;
+    .grid-item-img {
+      width: 35%;
+    }
+  }
+  .item3 {
+    grid-row: 3 / 4;
+   .grid-item-img {
+      width: 15%;
+    }
+  }
+  .item4 {
+    grid-row: 4 / 5;
+  .grid-item-img {
+      width: 20%;
+    }
+  }
+  .item5 {
+    grid-row: 5 / 6;
+   .grid-item-img:first-child  {
+      width: 30%;
+    }
+   .grid-item-img:last-child  {
+      width: 15%;
+    }
+  }
+
+  // ---------------  PROJET ------------------------
+
+  .projet-wrapper {
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  .projet-container1 {
+    padding: 1rem;
+    grid-row: 1 / 2;
+  }
+  .projet-container2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2 / 3;
+    h4 {
+      margin: 0;
+    }
+  }
+  .projet-container3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    grid-row: 3 / 4;
+    img {
+      width: 20%;
+      &:hover {
+        width: 28%;
+      }
+    }
+  }
+
+  // ---------------  experience ------------------------
+  // ---------------  formation ------------------------
+
+
+  #wagon-li img {
+    width: 15%;
+    min-width: 115px;
+  }
+
+  #um2-li img {
+    width: 5%;
+    min-width: 60px;
+  }
+}
+

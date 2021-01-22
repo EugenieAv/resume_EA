@@ -3,7 +3,7 @@
 // ******** css rules communes ********
 
 h3 {
-  padding: 1rem 0;
+  padding: 1rem ;
   margin: 0;
   display: flex;
   align-items: center;
@@ -22,9 +22,6 @@ ul {
 .lien {
   text-decoration: none;
   transition: all 500ms;
-  &:hover {
-    width: 35%;
-  }
 }
 
 .point {
@@ -120,12 +117,10 @@ ul {
   }
 }
 .icon-style {
-  font-size: 2rem;
   color: rgba(40, 75, 99, 0.6);
   transition: all ease 350ms;
   &:hover {
     color: rgba(40, 75, 99, 1);
-    font-size: 2.8rem;
   }
 }
 // --------------- div contact ------------------------
@@ -163,6 +158,8 @@ ul {
   background: rgba(255, 255, 255, 0.4);
   border: 1px $light-grey solid;
   border-radius: 4px;
+  position: sticky;
+  top: 0px;
 }
 
 .btn-go-to {
@@ -181,6 +178,12 @@ ul {
   }
 }
 
+// ************* sections wrapper *************
+
+.sections-wrapper {
+  // position: relative;
+  top: 5rem;
+}
 // ************* id= about-me *************
 
 .profil {
@@ -189,7 +192,7 @@ ul {
   background-image: url('profil.jpg');
   border-radius: 4px;
   width: 32%;
-  min-width: 280px;
+  min-width: 200px;
   object-fit: cover;
 }
 #about-me p {
@@ -200,72 +203,79 @@ ul {
 
 .logos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
 }
 
-.grid-item-img{
-  width: 25%;
-}
 
-.item2 {
-  .grid-item-img {
-    width: 65%;
-  }
-}
-.item3 {
-  .grid-item-img:last-child {
-    width: 30%;
-  }
-}
-.item4 {
-  display: grid;
-  .grid-item-img {
-    width: 35%;
-    justify-self: end;
-  }
-}
-.item5 {
-  grid-column: 2 / span 2;
-  grid-row: 2 / 3;
-  .grid-item-img:first-child {
-    width: 37%;
-  }
-  .grid-item-img:last-child {
-    width: 22%;
-  }
-}
 // ************* id= projet *************
 
 #projet p {
   text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+.projet-wrapper {
+  display: grid;
 }
 
-// ************* id= formation *************
+// ************* id= experience ************
 
-.ul-formation {
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
+
+// ************* Les 2 dernieres sections *************
+
+.liste-style {
+  padding-left: 1rem;
  li {
-  font-size: 1.1rem;
   list-style: none;
-  padding-right: 20px;
   }
 }
 
-#wagon-li p{
-  // background-image: url("logo.png");
-  // background-size: 30px;
-  // background-repeat: no-repeat;
-  // padding-left: 40px;
-  margin: 0;
+// --------------- experience ---------------
+@media (min-width: 1240px){
+  #ul-experience {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-#um2-li p {
-  margin: 0;
-  // background-image: url("um2.png");
-  // background-size: 30px;
-  // background-repeat: no-repeat;
-  // padding-left: 40px;
+// --------------- formation ---------------
+
+.ul-formation {
+  display: grid;
+}
+
+
+@media (min-width: 1150px) and (max-width: 1440px){
+  .ul-formation {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1149px) {
+  .ul-formation li {
+    margin: 1rem;
+  }
+}
+
+
+
+
+#wagon-li {
+   p{
+    // background-image: url("logo.png");
+    // background-size: 30px;
+    // background-repeat: no-repeat;
+    // padding-left: 40px;
+    margin: 0;
+  }
+}
+
+#um2-li{
+  p {
+    margin: 0;
+    // background-image: url("um2.png");
+    // background-size: 30px;
+    // background-repeat: no-repeat;
+    // padding-left: 40px;
+  }
 }

@@ -21,7 +21,8 @@ const linkToDiv = () => {
 
   const scrollToTheDiv = (target) => {
     target.scrollIntoView({
-      block: 'start',
+      // alignToTop: true,
+      block: 'end',
       behavior: 'smooth',
       inline: 'nearest'
     })
@@ -34,7 +35,6 @@ const linkToDiv = () => {
       scrollToTheDiv(item3);
       changeIcon(item3);
     } else {
-      console.log('perdu')
       item1.classList.toggle('hide');
       changeIcon(item3);
     }

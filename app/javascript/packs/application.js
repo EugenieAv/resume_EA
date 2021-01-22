@@ -31,6 +31,7 @@ import { showItems } from '../show_items';
 import { makeMagic } from '../show_items';
 import { reavealDiv } from '../reveal_div';
 import { linkToDiv } from '../link_to_div';
+import { menuFixedOnTop } from '../menu_fixed_on_top';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -39,4 +40,5 @@ document.addEventListener('turbolinks:load', () => {
   // makeMagic();
   reavealDiv();
   linkToDiv();
+  menuFixedOnTop();
 });

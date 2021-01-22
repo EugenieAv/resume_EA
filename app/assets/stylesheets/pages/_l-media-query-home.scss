@@ -1,0 +1,128 @@
+
+// ***************** GRAND ****************
+
+@media (min-width: 1150px) and (max-width: 1440px) {
+  body {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 4rem;
+    // color: green;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  .icon-style {
+    font-size: 2rem;
+    &:hover {
+      font-size: 2.4rem;
+    }
+  }
+  .sections {
+    padding: 0.5rem 2.5rem;
+    margin: 2rem auto;
+  }
+  .menu {
+    margin: 1rem auto;
+    padding: 1rem 2.5rem;
+  }
+  .join-me {
+    margin-top: 4rem;
+  }
+  .contact {
+    margin-bottom: 4rem;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  // ---------------- LANGUAGES ---------------
+  .logos {
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-item-img{
+    width: 25%;
+  }
+  .item2 {
+    .grid-item-img {
+      width: 65%;
+    }
+  }
+  .item3 {
+    .grid-item-img:last-child {
+      width: 30%;
+    }
+  }
+  .item4 {
+    display: grid;
+    .grid-item-img {
+      width: 35%;
+      justify-self: end;
+    }
+  }
+  .item5 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / 3;
+    .grid-item-img:first-child {
+      width: 37%;
+    }
+    .grid-item-img:last-child {
+      width: 22%;
+    }
+  }
+  // ---------------  PROJET ------------------------
+  .projet-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .projet-container1 {
+    padding: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .projet-container2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    h4 {
+      margin: 0;
+    }
+  }
+  .projet-container3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    img {
+      width: 30%;
+      &:hover {
+        width: 35%;
+      }
+    }
+  }
+
+  // ---------------  experience ------------------------
+  // ---------------  formation ------------------------
+
+
+  #wagon-li img {
+    width: 25%;
+    min-width: 145px;
+  }
+
+  #um2-li img {
+    width: 14%;
+  }
+}
+
+
