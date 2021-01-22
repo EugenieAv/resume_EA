@@ -32,20 +32,25 @@ ul {
   }
 }
 
-.container {
-  width: 90%;
-  margin: 0px auto;
-  // padding: 10px 30px;
-  // color: $duck-blue;
-  border: 2px $white solid;
-  // position: relative;
-  // z-index: -1;
+body {
+  // background-color: #9ec1a3;
+  margin: 0;
   background: radial-gradient(
     circle at top left,
-    $white,
-    $green,
-    $duck-blue,
+    #110922,
+    #24053c
     );
+}
+
+.container {
+  // width: 99%;
+  margin: 0px auto;
+  border-radius: 2px;
+  // padding: 10px 30px;
+  // color: $duck-blue;
+  // border: 2px $white solid;
+  // position: relative;
+  // z-index: -1;
 }
 // .container::after {
 //   content: "";
@@ -62,9 +67,9 @@ ul {
 
 .sections {
   width: 80%;
-  background: $white;
+  background: #F6F1F9;
   border: 1px $light-grey solid;
-  color: $dark-grey;
+  color: #012037;
   border-radius: 4px;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
   &:hover {
@@ -97,8 +102,8 @@ ul {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  color: $duck-blue;
-  text-shadow: 1px 1px 2px $light-grey;
+  color: #3FA1CA;
+  // text-shadow: 1px 1px 2px #a9d6e5;
 }
 // ----------- div join-me ----------
 .join-me {
@@ -117,10 +122,10 @@ ul {
   }
 }
 .icon-style {
-  color: rgba(40, 75, 99, 0.6);
+  color: #1B6288;
   transition: all ease 350ms;
   &:hover {
-    color: rgba(40, 75, 99, 1);
+    color: #3FA1CA;
   }
 }
 // --------------- div contact ------------------------
@@ -133,7 +138,7 @@ ul {
 .ml16 {
   // color: #402d2d;
   // padding: 40px 0;
-  font-weight: 800;
+  font-weight: thin;
   font-size: 1.2rem;
   // text-transform: uppercase;
   // letter-spacing: 0.5em;
@@ -155,19 +160,20 @@ ul {
 
 .menu {
   width: 80%;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px $light-grey solid;
+  background: #360055;
+  border: 1px #2D0349 solid;
   border-radius: 4px;
   position: sticky;
   top: 0px;
 }
 
 .btn-go-to {
-  background : $green;
+  background : #1B6288;
   border-radius : 4px;
-  border: 1px solid rgb(40,75,99);
+  // box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #012A4A;
   padding: 0.5rem 1rem;
-  color: white;
+  color: #F3DDFF;
   font-family: 'Noto Sans JP';
   font-weight: medium;
   font-size: 18px;
@@ -191,7 +197,7 @@ ul {
   margin: 0 1rem;
   background-image: url('profil.jpg');
   border-radius: 4px;
-  width: 32%;
+  width: 30%;
   min-width: 200px;
   object-fit: cover;
 }
