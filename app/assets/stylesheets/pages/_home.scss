@@ -196,12 +196,47 @@ body {
 }
 // ************* id= about-me *************
 
+@media screen and ( min-width : 1773px ){
+  .about-me-div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .profil {
+    width: 100%;
+  }
+  .bio {
+    display: flex;
+    margin: 0px 2em;
+    align-items: center;
+  }
+}
+
+@media (min-width: 868px) and (max-width: 1772px) {
+  .profil-img-container {
+    width: 25%;
+    float: left;
+    padding-right: 2rem;
+  }
+  .profil {
+    // float: left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 867px) {
+  .profil {
+    width: 40%;
+  }
+  .profil-img-container {
+    text-align: center;
+  }
+}
+
 .profil {
-  float: left;
-  margin: 0 1rem;
+  // float: left;
+  // margin: 0 1rem;
   background-image: url('profil.jpg');
   border-radius: 4px;
-  width: 30%;
+  // width: 30%;
   min-width: 200px;
   object-fit: cover;
 }
@@ -219,10 +254,18 @@ body {
 
 // ************* id= projet *************
 
-#projet p {
-  text-align: justify;
-  margin: 0;
-  padding: 0;
+#projet {
+  p {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: contents;
+  }
+}
+.projet-container3{
+  text-align: center;
 }
 .projet-wrapper {
   display: grid;
@@ -255,7 +298,7 @@ body {
 }
 
 
-@media (min-width: 1150px) and (max-width: 1440px){
+@media screen and (min-width: 1150px) {
   .ul-formation {
     grid-template-columns: 1fr 1fr;
   }
