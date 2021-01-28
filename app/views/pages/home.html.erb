@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class="menu menu2">
+  <div class="menu">
     <div class="btn-go-to fcc menu-1">
       <%= link_to "Qui suis-je", "#about-me", class: "style-link", id: "btnOne" %>
     </div>
@@ -124,9 +124,12 @@
               <p>Deploiement et mise en production du produit web</p>
           </div>
           <div class="projet-container3">
-            <%= link_to "http://www.wellbe-fit.xyz" do %>
-              <%= image_tag "wellbe-police.png", alt: "logo wellbe", class: "lien" %>
-            <% end %>
+            <div class="fcc">
+              <i class="far fa-hand-point-right"></i>
+              <%= link_to "http://www.wellbe-fit.xyz" do %>
+                <%= image_tag "wellbe-police.png", alt: "logo wellbe", class: "lien" %>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
