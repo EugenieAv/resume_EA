@@ -22,6 +22,10 @@ ul {
 .lien {
   text-decoration: none;
   transition: all 500ms;
+  border: 1px solid #232946;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #232946;
 }
 
 .point {
@@ -37,8 +41,8 @@ body {
   margin: 0;
   background: radial-gradient(
     circle at top left,
-    #110922,
-    #24053c
+    #232946,
+    #343D68
     );
 }
 
@@ -67,9 +71,9 @@ body {
 
 .sections {
   width: 80%;
-  background: #F6F1F9;
+  background: #fffffe;
   border: 1px $light-grey solid;
-  color: #012037;
+  color: #232946;
   border-radius: 4px;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
   &:hover {
@@ -102,7 +106,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  color: #3FA1CA;
+  color: #fffffe;
   // text-shadow: 1px 1px 2px #a9d6e5;
 }
 // ----------- div join-me ----------
@@ -122,10 +126,10 @@ body {
   }
 }
 .icon-style {
-  color: #1B6288;
+  color: #121629;
   transition: all ease 350ms;
   &:hover {
-    color: #3FA1CA;
+    color: #b8c1ec;
   }
 }
 // --------------- div contact ------------------------
@@ -160,27 +164,27 @@ body {
 
 .menu {
   width: 80%;
-  background: #360055;
-  border: 1px #2D0349 solid;
+  background: #333e72;
+  border: 2px #232946 solid;
   border-radius: 4px;
   position: sticky;
   top: 0px;
 }
 
 .btn-go-to {
-  background : #1B6288;
+  background : #eebbc3;
   border-radius : 4px;
   // box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  border: 1px solid #012A4A;
+  border: 1px solid #BFBFB0;
   padding: 0.5rem 1rem;
-  color: #F3DDFF;
+  // color: #A0677E;
   font-family: 'Noto Sans JP';
   font-weight: medium;
   font-size: 18px;
   cursor: pointer;
   a {
     font-family: 'Noto Sans JP';
-    color: white;
+    color: #232946;
   }
 }
 
